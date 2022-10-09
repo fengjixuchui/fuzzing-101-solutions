@@ -1,0 +1,13 @@
+[package]
+name = "exercise-4"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libafl = { version = "0.8.1", features = ["qemu_cli"] }
+libafl_qemu = { version = "0.8.1", features = ["aarch64"] }
+
+[profile.release]
+debug = true
